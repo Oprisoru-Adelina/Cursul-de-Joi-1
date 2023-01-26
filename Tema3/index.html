@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+<link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="frame">Calculator</div>
+            <div class="calc_display" id="rezultat">0</div>
+            <div class="butoane">
+                <button value="%" onclick="percent('%') ">%</button>
+                <button data-action="clear_e">CE</button>
+                <button value="clc" onclick="clearDisplay() ">C</button>
+                <button value="back" onclick="backSpace() ">DEL</button>
+                <button value="7" onclick="afisare('7') ">7</button>
+                <button value="8" onclick="afisare('8') ">8</button>
+                <button value="9" onclick="afisare('9') ">9</button>
+                <button value="/" onclick="afisare('/') ">/</button>
+                <button value="4" onclick="afisare('4') ">4</button>
+                <button value="5" onclick="afisare('5') ">5</button>
+                <button value="6" onclick="afisare('6') ">6</button>
+                <button value="*" onclick="afisare('*') ">*</button>
+                <button value="1" onclick="afisare('1') ">1</button>
+                <button value="2" onclick="afisare('2') ">2</button>
+                <button value="3" onclick="afisare('3') ">3</button>
+                <button value="-" onclick="afisare('-') ">-</button>
+                <button value="." onclick="afisare('.') ">.</button>
+                <button value="0" onclick="afisare('0') ">0</button>
+                <button value="=" onclick="rezolva()" >=</button>
+                <button value="+" onclick="afisare('+') ">+</button>
+            </div>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>

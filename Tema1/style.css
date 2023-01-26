@@ -1,0 +1,321 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.container .left_Side
+{
+    position: relative;
+    background: #003147;
+    padding: 20px;
+}
+.nume h2
+{
+    color: #fff;
+    font-weight: 500;
+}
+.porfileText
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.imgBox
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.imgBox img
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.porfileText h2
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.porfileText h2 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.title
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px ;
+}
+.about
+{
+    padding-top: 30px;
+}
+.about h3
+{
+    color: #fff;
+    font-weight: 500;
+}
+p
+{
+    color: #fff;
+}
+.contactInfo
+{
+    padding-top: 30px;
+}
+.contactInfo h3
+{
+    color: #fff;
+    font-weight: 500;
+}
+.contactInfo ul
+{
+    position: relative;
+}
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 5px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon
+{
+    display: inline-block;
+    width: 20px;
+    font-size: 16px;
+    color: #03a9f4;
+}
+.contactInfo ul li span
+{
+    color: #fff;
+    font-weight: 300;
+}
+.limbiStraine
+{
+    padding-top: 30px;
+}
+.title
+{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.limbiStraine ul
+{
+    position: relative;
+}
+.limbiStraine ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    color: #fff;
+    font-weight: 600;
+}
+.limbiStraine .percent
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+.limbiStraine .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+.educatie
+{
+    padding-top: 20px;
+}
+.educatie h3
+{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.educatie h5
+{
+    color: #03a9f4;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.educatie h4
+{
+    color: #003147;
+    font-weight: 600;
+}
+.educatie ul
+{
+    position: relative;
+}
+.educatie ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    color: #003147
+}
+.container .right_Side
+{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.profilInfo
+{
+    padding-top: 30px;
+}
+.profilInfo h3
+{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.p1
+{
+    color: #003147;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.programare
+{
+    padding-top: 30px;
+}
+.programare h3
+{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;;
+    padding-bottom: 10px;
+}
+.programare ul
+{
+    position: relative;
+}
+.programare ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    color: #003147;
+    font-weight: 600;
+}
+.programare .percent
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+.programare .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+.outer-frame 
+{
+    position: relative;
+	border: 1px solid #081921 ;
+	border-radius: 5px;
+}
+.interese 
+{
+	display: flex;
+	align-items: center;
+	align-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.interese > li {
+	display: flex;
+	flex: 1 0 0;
+	align-items: center;
+	justify-content: baseline;
+	flex-direction: column;
+	color: #003147;
+	padding: 1rem 0;
+	transition: all 0.3s;
+    cursor: pointer;
+}
+.interese > li > i {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 40px;
+	width: 50px;
+	height: 50px;
+    cursor: pointer;
+}
+.interese > li:hover {
+	transform: scale(1.2);
+	color: #03a9f4;
+    cursor: pointer;
+}
+.interese > li > span {
+	letter-spacing: 1px;
+    cursor: pointer;
+}
+.detalii
+{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.detalii h3
+{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;;
+    font-weight: 600;
+}

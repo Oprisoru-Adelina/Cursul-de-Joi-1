@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="row1">
+        <div class="col-xs-8">
+            <input type="text" class="form-control" name="task" placeholder="Task" #taskInput>
+        </div>
+ 
+        <div class="col-xs-4">
+            <button class="btn btn-info" (click)="addTask(taskInput)">Add</button>
+        </div>
+ 
+        <div class="row2">
+            <div class="col-xs-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>My Todo List</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let task of tasks; let idx = index">
+                        <td *ngIf="task.is_canceled; else elseTd">
+                            <s>{{ idx + 1 }}. {{task.title}}</s>
+                        </td>
+                        <ng-template #elseTd>
+                            <td>{{ idx + 1 }}. {{task.title}}</td>
+                        </ng-template>
+ 
+                        <td>
+                            <button class="btn btn-primary btn-xs" (click)="editTask(idx)"> Edit </button>
+                        </td>
+ 
+                        <td>
+                            <button class="btn btn-warning btn-xs" (click)="cancelTask(idx)"> Cancel </button>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger btn-xs" (click)="deleteTask(idx)"> Delete </button>
+                        </td>
+                    </tr>
+ 
+                </tbody>
+                <tfoot>
+                    <tr>
+                            <button class="btn btn-danger" (click)="clearToDo()">Clear</button>
+                    </tr>
+                </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+ </div>
